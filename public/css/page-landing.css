@@ -5,6 +5,8 @@
   min-height: 100vh;
 
   display: flex;
+
+  align-items: center;
 }
 
 #container {
@@ -24,19 +26,19 @@ h1,
 }
 
 .location {
-  animation-daley: 100ms;
+  animation-delay: 100ms;
 }
 
 main h1 {
-  animation-daley: 150ms;
-  font-size: clamp(4rem,  8vw, 8.4rem);
+  animation-delay: 150ms;
+  font-size: clamp(4rem, 8vw, 8.4rem);
 }
 
 .visit p {
-  animation-daley: 200ms;
+  animation-delay: 200ms;
 }
 
-.visit, a {
+.visit a {
   width: 8rem;
   height: 8rem;
   background: #ffd666;
@@ -47,21 +49,17 @@ main h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin: auto;
 
   transition: background 200ms;
   animation-delay: 250ms;
 }
 
-.visit, a:hover {
-    background: #96feff;
+.visit a:hover {
+  background: #96feff;
 }
 
-
-/*Dia2*/
-
-/* desktop versio */
+/* Desktop version */
 @media (min-width: 760px) {
   #container {
     padding: 5rem 2rem;
