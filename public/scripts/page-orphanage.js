@@ -56,3 +56,5 @@ function selectImage(event) {
     //adicionar a classe .active para este botao
     button.classList.add('active');
 }
+
+/* dia 3*/
