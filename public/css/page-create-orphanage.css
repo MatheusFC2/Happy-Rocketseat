@@ -7,14 +7,15 @@ main {
     flex: 1;
 }
 
-form {
-    width: 70rem;
-    margin: 6.4rem auto;
-    background: white;
-    border: 1px solid #D3E2E5;
+.map-container {
+    margin: 0 0 0; 
+}
 
-    border-radius: 2rem;
+.map-container .leaflet-container {
+    border-radius: 20px 20px 0 0;
+}
 
-    overflow: hidden; 
-    padding: 8rem;
+.map-container footer{
+    background: #f5f8fa;
+    border-radius: 0 0 20px 20px;
 }
