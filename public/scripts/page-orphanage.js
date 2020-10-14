@@ -1,60 +1,54 @@
-// tipos de dados
-// String
-// Number 01
-// Object {}
-// Boolean true or false
-// Array []
-
 const options = {
     dragging: false,
     touchZoom: false,
     doubleClickZoom: false,
     scrollWheelZoom: false,
-    zoomControl: false,
+    zoomControl: false
 }
 
 //create map
-const map = L.map('mapid', options).setView([-27.222633, -49.6455874], 16)
+
+const map = L.map('mapid', options).setView([-25.3712852, -49.2345013], 15);
 
 //create and add tileLayer
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',).addTo(map)
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-
-// creat icon
+//create icon
 const icon = L.icon({
     iconUrl: "./public/images/map-marker.svg",
-    iconsize: [58, 68],
-    iconAnchor:[29, 68],
-    popupAnchor:[170, 2]
+    iconSize: [58, 68],
+    iconAnchor: [29, 68],
+    popupAnchor: [170, 2]
 })
 
-L
-.marker([-27.222633, -49.6455874], {icon})
-.addTo(map)
+//create and add marker
+L.marker([-25.3712852, -49.2345013], { icon })
+    .addTo(map)
 
-/* image galery */
 
+// image gallery
+
+/* image gallery */
 function selectImage(event) {
     const button = event.currentTarget
 
-    //remover todas as classes .active
+    // remover todas as classes .active
     const buttons = document.querySelectorAll(".images button")
-    buttons.forEach(removeActiveClass)
+    buttons.forEach(removerActiveClass)
 
-    function removeActiveClass (button) {
+    function removerActiveClass(button) {
         button.classList.remove("active")
     }
 
-    //selecionar a image clicada
+    // selecionar a image clicada
     const image = button.children[0]
-    const imageContent = document.querySelector(".orphanage-details > img")
+    const imageContainer = document.querySelector(".orphanage-details > img")
 
-    //atualizar o container de images
-    imageContent.src = image.src
+    // atualizar o container de image
+    imageContainer.src = image.src
 
-    //adicionar a classe .active para este botao
-    button.classList.add('active');
+
+    // adicionar a classe .active para esse botão
+    button.classList.add("active")
 }
-
-/* dia 3*/

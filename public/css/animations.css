@@ -1,12 +1,10 @@
-/* Animações */
-
 @keyframes up {
-    from{
+    from {
         opacity: 0;
         transform: translateY(16px);
     }
 
-    to{
+    to {
         opacity: 1;
         transform: translateY(0);
     }
@@ -14,7 +12,7 @@
 
 @keyframes right {
     from {
-        transform: translatex(-100%);
+        transform: translateX(-100%);
     }
     to {
         transform: translateX(0);
@@ -28,11 +26,12 @@
     to {
         opacity: 1;
     }
+
 }
 
 .animate-up {
     animation-name: up;
-    animation-duration: 300ms;
+    animation-duration: 500ms;
     animation-fill-mode: backwards;
 }
 
@@ -46,5 +45,3 @@
     animation-duration: 300ms;
     animation-fill-mode: backwards;
 }
-
-/* dia 3*/

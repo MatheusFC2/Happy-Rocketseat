@@ -1,40 +1,30 @@
-// tipos de dados
-// String
-// Number 01
-// Object {}
-// Boolean true or false
-// Array []
-
-
 //create map
-const map = L.map('mapid').setView([-27.222633, -49.6455874], 16)
+
+const map = L.map('mapid').setView([-25.3712852,-49.2345013], 15);
 
 //create and add tileLayer
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',).addTo(map)
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
+ .addTo(map);
 
-
-// creat icon
+//create icon
 const icon = L.icon({
     iconUrl: "./public/images/map-marker.svg",
-    iconsize: [58, 68],
-    iconAnchor:[29, 68],
-    popupAnchor:[170, 2]
+    iconSize: [58, 68],
+    iconAnchor: [29, 68],
+    popupAnchor: [170, 2]
 })
 
-//create popup overlay
-const popup = L.popup ({
+//create popup
+
+const popup = L.popup({
     closeButton: false,
     className: 'map-popup',
     minWidth: 240,
-    minHeight: 240,
-}).setContent ('Lar das Meninas <a href="orphanage.html?id=1" class="choose-orphanage"> <img src="./public/images/arrow-white.svg" > </a>')
+    minHeight: 240
+}).setContent('Lar das meninas <a href="orphanage.html?id=1" class="choose-orphanage"> <img src="./public/images/arrow-white.svg"></a>')
 
-
-
-L
-.marker([-27.222633, -49.6455874], {icon})
-.addTo(map)
-.bindPopup(popup)
-
-/* dia 3*/
+//create and add marker
+L.marker([-25.3712852,-49.2345013], {icon}).addTo(map)
+    .addTo(map)
+    .bindPopup(popup)
