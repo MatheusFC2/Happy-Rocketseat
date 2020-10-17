@@ -1,5 +1,5 @@
 {
-  "name": "happy",
+  "name": "nlw3",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/srpulga/Happy-NLW.git"
+    "url": "git+https://github.com/Igor-Felipy/NLW-.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/srpulga/Happy-NLW/issues"
+    "url": "https://github.com/Igor-Felipy/NLW-/issues"
   },
-  "homepage": "https://github.com/srpulga/Happy-NLW#readme",
+  "homepage": "https://github.com/Igor-Felipy/NLW-#readme",
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.1.1",
